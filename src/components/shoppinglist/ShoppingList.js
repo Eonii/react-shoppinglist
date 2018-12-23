@@ -11,7 +11,7 @@ class Shoppinglist extends Component {
 
     deleteItem = (id) => {
         const shoppinglist = this.state.shoppinglist.filter(item =>{
-            return item.id != id
+            return item.id !== id
         })
         this.setState({
             shoppinglist
